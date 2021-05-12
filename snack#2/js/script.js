@@ -1,4 +1,4 @@
-const getRndNum = (min, max) => Math.floor(Math.random() * (max - min + 1) ) + min;
+getRndNum = (min, max) => Math.floor(Math.random() * (max - min + 1) ) + min;
 
 var teams = [
     {
