@@ -21,6 +21,7 @@ var bikes = [
     }
 ];
 var minWeight = 100;
+var bikeName;
 
 for (var i = 0; i < bikes.length; i++) {
 
@@ -32,7 +33,16 @@ for (var i = 0; i < bikes.length; i++) {
 
     }
 
+}
+
+for (var i = 0; i < bikes.length; i++) {
+
+    if (bikes[i].weight == minWeight) {
+
+        bikeName = bikes[i].name;
+
+    }
 
 }
 
-document.getElementById("bike").innerHTML = `Our lightest bike weights ${minWeight} kgs`;
+document.getElementById("bike").innerHTML = `Our lightest bike is ${bikeName} and weights ${minWeight} kgs`;
