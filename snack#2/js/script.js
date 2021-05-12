@@ -37,8 +37,8 @@ for (var i = 0; i < teams.length; i++) {
     teams[i].fouls = getRndNum(1, 50);
 
     let {teamName, fouls} = teams[i];
-    
-    nameFouls.push(teamName + " " + fouls);
+
+    nameFouls.push({name: teamName, fouls: fouls});
 
 }
 
