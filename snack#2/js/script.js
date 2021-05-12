@@ -33,11 +33,13 @@ var nameFouls = [];
 
 for (var i = 0; i < teams.length; i++) {
 
-    teams[i].points = getRndNum(1, 100);
-    teams[i].fouls = getRndNum(1, 100);
+    teams[i].points = getRndNum(1, 50);
+    teams[i].fouls = getRndNum(1, 50);
+
     let {teamName, fouls} = teams[i];
+    
     nameFouls.push(teamName + " " + fouls);
 
 }
-console.log(nameFouls);
 
+console.log(nameFouls);
