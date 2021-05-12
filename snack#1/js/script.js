@@ -30,15 +30,6 @@ for (var i = 0; i < bikes.length; i++) {
     if (weight < minWeight) {
 
         minWeight = weight;
-
-    }
-
-}
-
-for (var i = 0; i < bikes.length; i++) {
-
-    if (bikes[i].weight == minWeight) {
-
         bikeName = bikes[i].name;
 
     }
