@@ -1,6 +1,6 @@
-getRndNum = (min, max) => Math.floor(Math.random() * (max - min + 1) ) + min;
+const getRndNum = (min, max) => Math.floor(Math.random() * (max - min + 1) ) + min;
 
-var teams = [
+const teams = [
     {
         teamName: "Whites",
         points: 0,
@@ -27,9 +27,9 @@ var teams = [
         fouls: 0
     }
 ];
-var nameFouls = [];
+const nameFouls = [];
 
-for (var i = 0; i < teams.length; i++) {
+for (let i = 0; i < teams.length; i++) {
 
     teams[i].points = getRndNum(1, 50);
     teams[i].fouls = getRndNum(1, 50);
