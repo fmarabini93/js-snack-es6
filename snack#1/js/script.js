@@ -23,7 +23,7 @@ const bikes = [
 let minWeight = 100;
 let bikeName;
 
-for (var i = 0; i < bikes.length; i++) {
+for (let i = 0; i < bikes.length; i++) {
 
     let {weight} = bikes[i];
     
