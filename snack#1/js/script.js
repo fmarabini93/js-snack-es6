@@ -1,4 +1,4 @@
-var bikes = [
+const bikes = [
     {
         name: "white",
         weight: 2
@@ -20,12 +20,12 @@ var bikes = [
         weight: 6
     }
 ];
-var minWeight = 100;
-var bikeName;
+let minWeight = 100;
+let bikeName;
 
 for (var i = 0; i < bikes.length; i++) {
 
-    var {weight} = bikes[i];
+    let {weight} = bikes[i];
     
     if (weight < minWeight) {
 
