@@ -2,27 +2,27 @@ const getRndNum = (min, max) => Math.floor(Math.random() * (max - min + 1) ) + m
 
 const teams = [
     {
-        teamName: "Whites",
+        name: "Whites",
         points: 0,
         fouls: 0
     },
     {
-        teamName: "Blacks",
+        name: "Blacks",
         points: 0,
         fouls: 0
     },
     {
-        teamName: "Greens",
+        name: "Greens",
         points: 0,
         fouls: 0
     },
     {
-        teamName: "Reds",
+        name: "Reds",
         points: 0,
         fouls: 0
     },
     {
-        teamName: "Blues",
+        name: "Blues",
         points: 0,
         fouls: 0
     }
@@ -34,9 +34,9 @@ for (let i = 0; i < teams.length; i++) {
     teams[i].points = getRndNum(1, 50);
     teams[i].fouls = getRndNum(1, 50);
 
-    let {teamName, fouls} = teams[i];
+    let {name, fouls} = teams[i];
 
-    nameFouls.push({name: teamName, fouls: fouls});
+    nameFouls.push({name, fouls});
 
 }
 
